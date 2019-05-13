@@ -34,7 +34,7 @@
     var compile = function () {
         if (scripts.data.length == 0 || scripts.data.length != scripts.name.length) return; //no reason to compile when there are no scripts
         var elem, source = '',
-            body = document.getElementsByTagName('body')[0];
+            body = document.getElementById('target');
         scripts.total = 0; //clear the 'queue' incase the xhr response was super quick and happened before the initializer finished
         var hashCode = function (s) {
             var hsh = 0,
